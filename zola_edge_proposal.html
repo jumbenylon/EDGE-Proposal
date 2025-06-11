@@ -2,82 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Proposal for Energy Services - ZOLA Intelligence</title>
+  <title>ZOLA Intelligence Proposal</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Helvetica Neue", sans-serif;
       margin: 40px;
-      color: #333;
-      background-color: #f8f8f8;
+      background-color: #f9f9f9;
+      color: #aaa; /* Light Grey for body text */
     }
     .container {
       background: #fff;
       padding: 40px;
-      border-radius: 8px;
       max-width: 800px;
       margin: auto;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     .logo {
       text-align: center;
       margin-bottom: 30px;
     }
     .logo img {
-      max-height: 100px;
+      height: 80px;
     }
-    h1 {
-      font-size: 20px;
-      color: #004d7a;
-      margin-bottom: 20px;
+    h1, h2, h3 {
+      color: #333; /* Dark Grey for headings */
+    }
+    p, li {
+      color: #888; /* Light Grey */
+      line-height: 1.6;
     }
     .section {
       margin-bottom: 30px;
     }
+    .highlight {
+      background-color: #ffcc4e;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      font-weight: bold;
+      color: #000;
+    }
     .offer {
-      background: #f0f4f8;
-      border-left: 5px solid #0078d4;
+      border-left: 5px solid #ffcc4e;
+      background: #fdf8e4;
       padding: 20px;
       margin-bottom: 20px;
     }
-    .offer h2 {
-      font-size: 18px;
-      margin: 0 0 10px;
-    }
-    .offer ul {
-      margin-top: 10px;
-      padding-left: 20px;
-    }
     .footer {
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
       margin-top: 40px;
-      font-size: 14px;
-      color: #777;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="logo">
-      {{tenantLogo}}
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA5FBMVEX/////wQ7w8PD8/Pytra3z8/P//f/29vb///6ZmZnj4+OxsbGHh4ebm5v5+fnIyMjV1dWSkpK6urrd3d3/vQDCwsKioqKMjIz4//////zq6ur//vj/ugD/wBP5wgC2trb4//H/9/SAgID39uT58NHz/vr72Yj30mz52oD936v4wxn+/eL47rz+5bz4zlP+9t/3xyz14n7302D7x1L35ZT/78zzxQD+7eH65rDzyx33y0D81Hz63p368cf/uyXz22f6xkTx2F/14Yn6xDH766r476/x00P399L201X53pT7/+r60WwXbfqWAAAGnUlEQVR4nO2ba1fbOBCGJSs2dm62EyWRIluEJBQ20ELpEtKUyy60FNr//39WFzsktGWBc3LS1c7zoUfBtjSvZjS62EUIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg/0ywaQPWCy..." alt="ZOLA Intelligence Logo">
     </div>
 
     <h1>Proposal for Energy Services</h1>
 
     <div class="section">
-      <strong>Client:</strong> {{prospectName}}<br>
-      <strong>Valid until:</strong> {{expirationDate}}<br>
-      <strong>Address:</strong> {{prospectAddress}}
+      <p><strong>Client:</strong> <span class="highlight">{{prospectName}}</span></p>
+      <p><strong>Valid until:</strong> <span class="highlight">{{expirationDate}}</span></p>
+      <p><strong>Address:</strong> {{prospectAddress}}</p>
     </div>
 
     <div class="section">
-      Hello {{prospectName}},<br><br>
-      This proposal outlines multiple options for providing clean, reliable energy and power for your appliances. 
-      For more information on how to purchase these systems, please contact <strong>{{organizationName}}</strong> Sales.
+      <p>Hello <strong>{{prospectName}}</strong>,</p>
+      <p>This proposal outlines multiple options for providing clean, reliable energy and power for your appliances. For more information on how to purchase these systems, please contact <strong>{{organizationName}}</strong> Sales.</p>
     </div>
 
-    {{offers}}
+    <!-- Offer 1 -->
+    <div class="offer">
+      <h2>Option 1 – Starting at <span class="highlight">TZS 17,792,000</span> or <span class="highlight">TZS 460,000/month (3 years)</span></h2>
+      <ul>
+        <li>1 CFL Light</li>
+        <li>1 20" - 29" TV</li>
+        <li>1 Amplifier</li>
+        <li>1 Laptop Computer</li>
+        <li>1 Toaster</li>
+        <li>1 Dishwasher with Dryer</li>
+        <li>1 Inverter - Split Air Conditioning System (1 HP)</li>
+      </ul>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="offer">
+      <h2>Option 2 – Starting at <span class="highlight">TZS 15,149,000</span> or <span class="highlight">TZS 395,000/month (3 years)</span></h2>
+      <ul>
+        <li>1 CFL Light</li>
+        <li>1 20" - 29" TV</li>
+        <li>1 Amplifier</li>
+        <li>1 Laptop Computer</li>
+        <li>1 Toaster</li>
+        <li>1 Dishwasher with Dryer</li>
+        <li>1 Inverter - Split Air Conditioning System (1 HP)</li>
+      </ul>
+    </div>
 
     <div class="footer">
-      ZOLA Intelligence Proposal • Powered by {{organizationName}}
+      Powered by ZOLA Intelligence • {{organizationName}} Sales
     </div>
   </div>
 </body>
