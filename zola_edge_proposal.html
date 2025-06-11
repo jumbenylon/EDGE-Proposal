@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Proposal for Energy Services - ZOLA Intelligence</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      color: #333;
+      background-color: #f8f8f8;
+    }
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .logo img {
+      max-height: 100px;
+    }
+    h1 {
+      font-size: 20px;
+      color: #004d7a;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .offer {
+      background: #f0f4f8;
+      border-left: 5px solid #0078d4;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .offer h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+    }
+    .offer ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      {{tenantLogo}}
+    </div>
+
+    <h1>Proposal for Energy Services</h1>
+
+    <div class="section">
+      <strong>Client:</strong> {{prospectName}}<br>
+      <strong>Valid until:</strong> {{expirationDate}}<br>
+      <strong>Address:</strong> {{prospectAddress}}
+    </div>
+
+    <div class="section">
+      Hello {{prospectName}},<br><br>
+      This proposal outlines multiple options for providing clean, reliable energy and power for your appliances. 
+      For more information on how to purchase these systems, please contact <strong>{{organizationName}}</strong> Sales.
+    </div>
+
+    {{offers}}
+
+    <div class="footer">
+      ZOLA Intelligence Proposal • Powered by {{organizationName}}
+    </div>
+  </div>
+</body>
+</html>
