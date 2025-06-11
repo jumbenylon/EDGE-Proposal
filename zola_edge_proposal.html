@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ZOLA Intelligence Proposal</title>
+  <title>ZOLA Intelligence – Proposal for Energy Services</title>
   <style>
     body {
-      font-family: "Helvetica Neue", sans-serif;
+      font-family: "Segoe UI", Roboto, sans-serif;
       margin: 40px;
-      background-color: #f9f9f9;
-      color: #aaa; /* Light Grey for body text */
+      background-color: #f8f8f8;
+      color: #777; /* Light grey body text */
     }
     .container {
+      max-width: 800px;
       background: #fff;
       padding: 40px;
-      max-width: 800px;
       margin: auto;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.05);
@@ -23,90 +23,49 @@
       margin-bottom: 30px;
     }
     .logo img {
-      height: 80px;
+      max-width: 200px;
+      height: auto;
     }
-    h1, h2, h3 {
-      color: #333; /* Dark Grey for headings */
-    }
-    p, li {
-      color: #888; /* Light Grey */
-      line-height: 1.6;
+    h1 {
+      color: #333; /* Dark grey heading */
+      font-size: 24px;
+      margin-bottom: 10px;
     }
     .section {
-      margin-bottom: 30px;
+      margin: 25px 0;
     }
-    .highlight {
-      background-color: #ffcc4e;
-      padding: 5px 10px;
-      border-radius: 4px;
-      display: inline-block;
-      font-weight: bold;
-      color: #000;
+    .section strong {
+      color: #333;
     }
     .offer {
+      background: #fffbea;
       border-left: 5px solid #ffcc4e;
-      background: #fdf8e4;
       padding: 20px;
-      margin-bottom: 20px;
+      margin: 20px 0;
+      border-radius: 5px;
+    }
+    .offer h2 {
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .offer ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .highlight {
+      color: #ffcc4e;
+      font-weight: bold;
     }
     .footer {
-      font-size: 13px;
+      font-size: 14px;
       color: #aaa;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="logo">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA5FBMVEX/////wQ7w8PD8/Pytra3z8/P//f/29vb///6ZmZnj4+OxsbGHh4ebm5v5+fnIyMjV1dWSkpK6urrd3d3/vQDCwsKioqKMjIz4//////zq6ur//vj/ugD/wBP5wgC2trb4//H/9/SAgID39uT58NHz/vr72Yj30mz52oD936v4wxn+/eL47rz+5bz4zlP+9t/3xyz14n7302D7x1L35ZT/78zzxQD+7eH65rDzyx33y0D81Hz63p368cf/uyXz22f6xkTx2F/14Yn6xDH766r476/x00P399L201X53pT7/+r60WwXbfqWAAAGnUlEQVR4nO2ba1fbOBCGJSs2dm62EyWRIluEJBQ20ELpEtKUyy60FNr//39WFzsktGWBc3LS1c7zoUfBtjSvZjS62EUIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg/0ywaQPWCy..." alt="ZOLA Intelligence Logo">
-    </div>
-
-    <h1>Proposal for Energy Services</h1>
-
-    <div class="section">
-      <p><strong>Client:</strong> <span class="highlight">{{prospectName}}</span></p>
-      <p><strong>Valid until:</strong> <span class="highlight">{{expirationDate}}</span></p>
-      <p><strong>Address:</strong> {{prospectAddress}}</p>
-    </div>
-
-    <div class="section">
-      <p>Hello <strong>{{prospectName}}</strong>,</p>
-      <p>This proposal outlines multiple options for providing clean, reliable energy and power for your appliances. For more information on how to purchase these systems, please contact <strong>{{organizationName}}</strong> Sales.</p>
-    </div>
-
-    <!-- Offer 1 -->
-    <div class="offer">
-      <h2>Option 1 – Starting at <span class="highlight">TZS 17,792,000</span> or <span class="highlight">TZS 460,000/month (3 years)</span></h2>
-      <ul>
-        <li>1 CFL Light</li>
-        <li>1 20" - 29" TV</li>
-        <li>1 Amplifier</li>
-        <li>1 Laptop Computer</li>
-        <li>1 Toaster</li>
-        <li>1 Dishwasher with Dryer</li>
-        <li>1 Inverter - Split Air Conditioning System (1 HP)</li>
-      </ul>
-    </div>
-
-    <!-- Offer 2 -->
-    <div class="offer">
-      <h2>Option 2 – Starting at <span class="highlight">TZS 15,149,000</span> or <span class="highlight">TZS 395,000/month (3 years)</span></h2>
-      <ul>
-        <li>1 CFL Light</li>
-        <li>1 20" - 29" TV</li>
-        <li>1 Amplifier</li>
-        <li>1 Laptop Computer</li>
-        <li>1 Toaster</li>
-        <li>1 Dishwasher with Dryer</li>
-        <li>1 Inverter - Split Air Conditioning System (1 HP)</li>
-      </ul>
-    </div>
-
-    <div class="footer">
-      Powered by ZOLA Intelligence • {{organizationName}} Sales
-    </div>
-  </div>
-</body>
-</html>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA5FBMVEX/////wQ7w8PD8/Pytra3z8/P//f/29vb///6ZmZnj4+OxsbGHh4ebm5v5+fnIyMjV1dWSkpK6urrd3d3/vQDCwsKioqKMjIz4//////zq6ur//vj/ugD/wBP5wgC2trb4//H/9/SAgID39uT58NHz/vr72Yj30mz52oD936v4wxn+/eL47rz+5bz4zlP+9t/3xyz14n7302D7x1L35ZT/78zzxQD+7eH65rDzyx33y0D81Hz63p368cf/uyXz22f6xkTx2F/14Yn6xDH766r476/x00P399L201X53pT7/+r60WwXbfqWAAAGnUlEQVR4nO2ba1fbOBCGJSs2dm62EyWRIluEJBQ20ELpEtKUyy60FNr//39WFzsktGWBc3LS1c7zoUfBtjSvZjS62EUIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADg/0ywaQPWCyej8aZtWC/B7pvdTduwXsK9sctRypQH9xHftBlrRLA/JgfMZYXokL5l4aaNWBtK2dfsHRPuDkPOj6Z0zDZtxhoR4jh7j9yNUaXwHZ0I4Wqa4YLwk0zOuLNTBWfsDZYflDxXFQbhn/hSjlno5jAUynGHVMpPjHA3FYZInE4xlTsDV6dCIc6mGaYzxh0dhCEbfaQYz5EInFRIOBrMM5zT001bsi5CNviuPIg/Obxc26d4gvORk1mGk0Cwc5lPc3zu6FSvkudMqhCl7wahmwoFupD4EmN5wRwM0jAQIR9LlWUkvVIx6uBqRnC28zHHmpGTIRoMiLjV8wSmn1W4OkjAgxOKc+XEv4ibp0+D4MpEaC5ngZtLbnZuBMrsbzUknVQ4k5meCjN5FvLAvXEo2EWGLeduLkjZmEor8EbsOhmiZxNqBdKLXfdCNOREHJcuvEPcwX2vGJxYD6rJ8GjTxqwDHuwVIYrptYPve9Wou7YhKvP8hvwOEbrVaaTdmJgyqWiqqtTWhdrSbf1alDZani4m6pItIa+j/zVPdfq6ONBbXmrW21OqFqR6udZf1Ipafllfa6mBpBtFlYQUNyraqmZ9uV3caxvzW420sV19qcB2PfaJ1+kZ+0jqK3Qp7mz5/tbDbbVGtUm8pGUajLf8dt20VDU21pu+7yVpBenV6GCuBqAZhfTErmXata2iVhR5ZYVp3y8a8HstjzSrNQ+parbilrpZ9Xe12/T7DdOBqGE7tpdsET/ZfqHA/tDK6NebWmFU/j2OV25rVZZ/JNrsypJC+3ftEsF3+QzrcZhjOWZEx0a7tXi08aCw7D5SX/FKYkWhqq6fDE25q5+qpi+UVjZZVh9rW3+l0K8v/zIKq11jx7JCNDT2h2h0QqW8nO4Xq5mnFcYPVzUrCtGSwtRDr4H0SFFq6hKJmgrTboc0m+aa/pksj0ij0E/bPyrcTmylDH1RHqTlevvnCsuGo1XLlxWS2vZCofdKF/oPz+lOJfWuQg+ZOFUF3Zg3VCO0Yz1aqadab6fXiIZ99KPC2Fqn0umpCtIZK0S0640o6jZXFUaKNEZLznykcNhoDItA0gptzLycZq8sGW+SRvnzIUpVjkM2wyDfNwpbyn2V5CcKW+YhTnbRVOZyrOLVvKl42ofpIr2uKqzopP2g0IvQ61hEd
